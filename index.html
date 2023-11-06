@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <script src="./site.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="introPartContainer">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="formPartContainer">
+        <div class="tryItFreeDiv">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+        <div class="formContainer">
+          <div class="inputHolder">
+            <input id="firstNameInput" type="text" placeholder="First Name" />
+            <img id="firstNameErrorImg" src="./images/icon-error.svg" />
+            <p id="firstNameErrorText">First Name cannot be empty</p>
+          </div>
+          <div class="inputHolder">
+            <input id="lastNameInput" type="text" placeholder="Last Name" />
+            <img id="lastNameErrorImg" src="./images/icon-error.svg" />
+            <p id="lastNameErrorText">Last Name cannot be empty</p>
+          </div>
+          <div class="inputHolder">
+            <input id="emailInput" type="email" placeholder="Email Address" />
+            <img id="emailErrorImg" src="./images/icon-error.svg" />
+            <p id="emailErrorText">Email Name cannot be empty</p>
+          </div>
+          <div class="inputHolder">
+            <input id="passwordInput" type="text" placeholder="Password" />
+            <img id="passwordErrorImg" src="./images/icon-error.svg" />
+            <p id="passwordErrorText">Password cannot be empty</p>
+          </div>
+
+          <button id="bttn">Claim your free trial</button>
+          <text>
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </text>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

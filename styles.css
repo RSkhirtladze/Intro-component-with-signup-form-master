@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #fff;
+  --red: #ff7979;
+  --purplish: #5e54a4;
+  --green: #38cc8b;
+  --black: #3d3b48;
+  --gray: #bab7d4;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  font-family: Poppins;
+  background: url("./images/bg-intro-mobile.png") no-repeat center center
+    var(--red);
+  padding: 5rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.introPartContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  gap: 1rem;
+  text-align: center;
+}
+
+.introPartContainer > h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: -0.01825rem;
+}
+
+.introPartContainer > p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+}
+
+.formPartContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tryItFreeDiv {
+  border-radius: 0.625rem;
+  background: var(--purplish);
+
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.13rem 4rem;
+  color: var(--white);
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.01675rem;
+}
+
+.tryItFreeDiv > span {
+  font-weight: 700;
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: var(--white);
+  gap: 1rem;
+}
+
+.inputHolder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+input {
+  height: 3.5rem;
+  border-radius: 0.3125rem;
+  border: 1px solid #dedede;
+  padding-left: 1.2rem;
+  color: var(--black);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.625rem;
+  letter-spacing: 0.01563rem;
+  background: var(--white);
+  outline: none;
+}
+
+input::placeholder {
+  opacity: 0.75;
+}
+
+.inputHolder > img {
+  position: absolute;
+  top: 1rem;
+  right: 1.7rem;
+
+  display: none;
+}
+
+.inputHolder > p {
+  color: #ff7979;
+  text-align: right;
+  font-size: 0.6875rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 0.58rem;
+
+  display: none;
+}
+
+button {
+  height: 3.5rem;
+  border-radius: 0.3125rem;
+  background: var(--green);
+  border: none;
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+
+  color: var(--white);
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.625rem;
+  letter-spacing: 0.0625rem;
+}
+
+text {
+  color: var(--gray);
+  text-align: center;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+}
+
+.formContainer > text > span {
+  color: var(--red);
+  font-weight: 700;
+}
+
+@media (min-width: 54rem) {
+  html {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  body {
+    height: 100%;
+  }
+  main {
+    height: 100%;
+    background: url("./images/bg-intro-desktop.png") no-repeat center center
+      var(--red);
+    padding: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 2.8rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
